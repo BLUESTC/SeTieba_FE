@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+	<div class="bodyBlank"></div>
+	<center>
+		<div class="bodyCenter">
+			<div class="nav">
+				<div id="navSection1">
+					<div class="navItem" id="navLogo">
+						<img id="logoImg" src="img/png/logo-small.png">
+					</div>
+
+					<div class="navItem" id="navWebName">
+						<a href="home.html">匿名贴吧</a>
+					</div>
+
+					<div class="navItem" id="navLogin">
+						<a href="login.html">登录</a>
+					</div>
+
+					<div class="navItem" id="navRegister">
+						<a href="register.html">注册</a>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<div id="navSection2">
+					<div class="navItem" id="navHome">
+						<div class="navS2A"><a href="home.html">首页</a></div>
+					</div>
+
+					<div class="navItem" id="navChat">
+						<div class="navS2A"><a href="chat.html">聊天</a></div>
+					</div>
+
+					<div class="navItem" id="navSearchText">
+						<input id="inputSearch" type="text" placeholder="搜索帖子,话题" />
+					</div>
+
+					<div class="navItem" id="navSearchIcon">
+						<a href=""><img src="img/png/search.png"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header"></div>
+
+			<div class="section">
+				<div id="loginSection">
+					<table>
+						<tr>
+							<th colspan="2" align="center">
+								<img id="loginLogo" src="img/png/logo-big.png">
+								<div id="loginWebName">匿名贴吧</div>
+							</th>
+						</tr>
+
+						<tr>
+							<td>用户昵称</td>
+							<td>
+								<input id="userName" class="inputText" type="text" name="userName" />
+							</td>
+						</tr>
+						
+						<tr>
+							<td>学生邮箱</td>
+							<td>
+								<input class="inputText" type="text" name="email" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>初始密码</td>
+							<td>
+								<input class="inputText" type="password" name="password" />
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>确认密码</td>
+							<td>
+								<input class="inputText" type="password" name="confirmPassword" />
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" align="center">
+								<input id="loginButton" type="button" onclick="msg()" value="提交" />
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>
+
+			<div class="footer">
+				底部信息栏：版权、联系方式......
+			</div>
+		</div>
+	</center>
+	<div class="blank"></div>
+
+	<script type="text/javascript" src="register.js"></script>
+</body>
+</html>

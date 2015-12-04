@@ -1,0 +1,119 @@
+*{
+	margin: 0px;
+}
+
+body{
+	font-family: "Microsoft YaHei";
+	/*background-color: black;*/
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 28px;
+	color: white;
+}
+
+.bodyBlank{
+	height: 1px;
+}
+
+.bodyCenter{
+	width: 960px;
+	height: 1050px;
+}
+
+.navItem{
+	float: left;
+	line-height: 50px;
+}
+
+#navSection1,
+#navSection2{
+	height: 50px;
+}
+
+#navSection1{
+	background-color: black;
+}
+
+#navSection2{
+	border-style: solid;
+	border-width: 2px
+}
+
+#navLogo{
+	width: 100px;
+	height: 50px;
+}
+
+#logoImg{
+	margin-top: 6px;
+}
+
+#navWebName{
+	width: 112px;
+	height: 50px;
+}
+
+#navLogin{
+	position: relative;
+	left: 588px;
+	width: 56px;
+	height: 50px;
+}
+
+#navRegister{
+	position: relative;
+	left: 612px;
+	width: 56px;
+	height: 50px;
+}
+
+
+.clear{
+	clear: both;
+}
+
+#navHome{
+	width: 100px;
+	height: 50px;
+}
+
+#navChat{
+	position: relative;
+	left: 30px;
+	width: 82px;
+	height: 50px;
+}
+
+.navS2A{
+	width: 80px;
+	height: 40px;
+	margin-top: 5px;
+	line-height: 40px;
+	background-color: black;
+	border-radius: 10px;
+}
+
+#navSearchText{
+	position: relative;
+	left: 70px;
+	width: 620px;
+	height: 50px;
+}
+
+#inputSearch{
+	margin-top: 8px;
+	width: 620px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+#navSearchIcon{
+	position: relative;
+	left: 85px;
+	width: 46px;
+	height: 50px;
+}
