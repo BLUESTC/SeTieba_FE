@@ -133,13 +133,136 @@ a{
 }
 
 /* Chat Section */
-#loginFailMsg{
-	width: 610px;
-	height: 100px;
+#hotTopicBox{
+	height: 80px;
 	position: relative;
-	top: 100px;
-	font-size: 28px;
-	line-height: 100px;
+	top: 60px;
+}
+
+.topicBoxItem{
+	width: 50px;
+	height: 80px;
+	float: left;
+	position: relative;
+}
+
+.topicWord{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.topicImg{
+	width: 50px;
+	height: 50px;
+	float: left;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+.topicTitle{
+	width: 50px;
+	font-size: 16px;
+	float: left;
+	position: relative;
+	top: 9px;
+}
+
+#more{
+	color: black;
+	font-size: 20px;
+}
+
+#boxItem1{
+	left: 10px;
+}
+
+#boxItem2{
+	left: 60px;
+}
+
+#boxItem3{
+	left: 120px;
+}
+
+#boxItem4{
+	left: 180px;
+}
+
+#boxItem5{
+	left: 240px;
+}
+
+#boxItem6{
+	left: 300px;
+}
+
+#boxItem7{
+	left: 360px;
+}
+
+#boxItem8{
+	left: 420px;
+}
+
+#boxItem9{
+	left: 480px;
+}
+
+#hotArticleList{
+	height: 730px;
 	border-style: solid;
 	border-width: 1px;
+	position: relative;
+	top: 60px;
 }
+
+#listWord{
+	height: 30px;
+	border-style: solid;
+	border-width: 1px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*#listNave{
+	height: 40px;
+	border-style: solid;
+	border-width: 1px;
+}*/
+
+#listNav{
+	font-size: 18px;
+}
+
+.listItem{
+	height: 30px;
+	border-style: solid;
+	border-width: 1px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.itemNav1,
+.itemNav2,
+.itemNav3{
+	float:left;
+	position: relative;
+	line-height: 30px;
+}
+
+.itemNav1{
+	width: 40px;
+	height: 30px;
+}
+
+.itemNav2{
+	width: 80px;
+	height: 30px;
+	left: 400px;
+}
+
+.itemNav3{
+	width: 85px;
+	height: 30px;
+	left: 735px;
+}
+

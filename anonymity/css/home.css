@@ -132,14 +132,127 @@ a{
 	line-height: 50px;
 }
 
+
+
 /* Home Section */
-#loginFailMsg{
-	width: 610px;
+#bannerSection{
+	height: 300px;
+}
+
+#bannerSection1{
+	height: 270px;
+	position: relative;
+	top: 20px;
+}
+
+#bannerSection2{
+	height: 30px;
+}
+
+#bannerBtnLeft,
+#bannerBox,
+#bannerBtnRight{
+	float: left;
+	position: relative;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+#bannerBtnLeft,
+#bannerBtnRight{
+	width: 30px;
+	height: 30px;
+}
+
+#bannerBtnLeft{
+	left: 10px;
+	top: 110px;
+}
+
+#bannerBox{
+	left: 30px;
+	height: 250px;
+}
+
+#bannerBtnRight{
+	left: 50px;
+	top: 110px;
+}
+
+#banner{
+	width: 840px;
+	height: 250px;
+}
+
+#hotTopic{
+	position: relative;
+	bottom: 0px;
+}
+
+.introBox{
+	width: 840px;
 	height: 100px;
 	position: relative;
-	top: 100px;
-	font-size: 28px;
-	line-height: 100px;
 	border-style: solid;
 	border-width: 1px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+#introBox1{
+	top: 40px;
+}
+
+#introBox2{
+	top: 80px;
+}
+
+#introBox3{
+	top: 120px;
+}
+
+#introBox4{
+	top: 160px;
+}
+
+#home1,
+#home2,
+#home3,
+#home4{
+	position: relative;
+	top: 10px;
+}
+
+#home1{
+	width: 220px;
+	height: 80px;
+	right: 300px;
+}
+
+#home2{
+	width: 130px;
+	height: 85px;
+	left: 345px;
+}
+
+#home3{
+	width: 80px;
+	height: 80px;
+	right: 370px;
+}
+
+.home3Item{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+#home4{
+	width: 80px;
+	height: 80px;
+	left: 370px;
+}
+
+.introWord{
+	font-size: 28px;
+	position: relative;
+	bottom: 54px;
 }
