@@ -118,12 +118,98 @@ a{
 	height: 50px;
 }
 
+/* Web's Section */
 .section{
 	height: 900px;
 	border-style: solid;
 	border-width: 1px;
 }
 
+
+#editBar{
+	width: 920px;
+	height: 40px;
+	position: relative;
+	top: 20px;
+}
+
+#releaseBtn{
+	width: 90px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	background-color: #0000CC;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+
+img{
+	float: left;
+	position: relative;
+	left: 610px;
+}
+
+#imgPencil{
+	left: 610px;
+}
+
+#imgFont{
+	left: 650px;
+}
+
+#imgImage{
+	left: 700px;
+}
+
+#select{
+	width: 920px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	top: 30px;
+}
+
+#selectWord,
+#selectForm{
+	float: left;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#articleT{
+	position: relative;
+	top: 40px;
+}
+
+#selectWord,
+#selectForm{
+	float: left;
+	font-weight: bold;
+	font-size: 16px;
+	position: relative;
+	top: 15px;
+}
+
+#articleC{
+	position: relative;
+	top: 50px;
+}
+
+
+#articleTitle{
+	width: 920px;
+	height: 50px;
+}
+
+#articleContent{
+	width: 920px;
+	height: 655px;
+}
+
+
+/* Web's Footer*/
 .footer{
 	height: 50px;
 	background-color: black;
@@ -132,131 +218,3 @@ a{
 	line-height: 50px;
 }
 
-
-
-/* Home Section */
-#bannerSection{
-	height: 300px;
-}
-
-#bannerSection1{
-	height: 270px;
-	position: relative;
-	top: 20px;
-}
-
-#bannerSection2{
-	height: 30px;
-}
-
-#bannerBtnLeft,
-#bannerBox,
-#bannerBtnRight{
-	float: left;
-	position: relative;
-	box-shadow: 5px 5px 5px #888888;
-}
-
-#bannerBtnLeft,
-#bannerBtnRight{
-	width: 30px;
-	height: 30px;
-}
-
-#bannerBtnLeft{
-	left: 10px;
-	top: 110px;
-}
-
-#bannerBox{
-	left: 30px;
-	height: 250px;
-}
-
-#bannerBtnRight{
-	left: 50px;
-	top: 110px;
-}
-
-#banner{
-	width: 840px;
-	height: 250px;
-}
-
-#hotTopic{
-	position: relative;
-	bottom: 0px;
-}
-
-.introBox{
-	width: 840px;
-	height: 100px;
-	position: relative;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 5px 5px 5px #888888;
-}
-
-#introBox1{
-	top: 40px;
-}
-
-#introBox2{
-	top: 80px;
-}
-
-#introBox3{
-	top: 120px;
-}
-
-#introBox4{
-	top: 160px;
-}
-
-#home1,
-#home2,
-#home3,
-#home4{
-	position: relative;
-	top: 10px;
-}
-
-#home1{
-	width: 220px;
-	height: 80px;
-	right: 300px;
-}
-
-#home2{
-	width: 130px;
-	height: 85px;
-	left: 345px;
-}
-
-#home3{
-	width: 80px;
-	height: 80px;
-	right: 370px;
-}
-
-.home3Item{
-	width: 40px;
-	height: 40px;
-	float: left;
-}
-
-#home4{
-	width: 80px;
-	height: 80px;
-	left: 370px;
-}
-
-.introWord{
-	font-size: 28px;
-	position: relative;
-	bottom: 54px;
-}
-
-#registerLink{
-	color: #0000CC;
-}

@@ -1,0 +1,281 @@
+/* Web's BaseFrame*/
+*{
+	margin: 0px;
+}
+
+body{
+	font-family: "Microsoft YaHei";
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 28px;
+	color: white;
+}
+
+.bodyBlank{
+	height: 1px;
+}
+
+.bodyCenter{
+	width: 960px;
+	height: 1050px;
+}
+
+/* Web's Nav*/
+.navItem{
+	float: left;
+	line-height: 50px;
+}
+
+#navSection1,
+#navSection2{
+	height: 50px;
+}
+
+#navSection1{
+	background-color: black;
+}
+
+#navSection2{
+	border-style: solid;
+	border-width: 1px
+}
+
+#navLogo{
+	width: 100px;
+	height: 50px;
+}
+
+#logoImg{
+	margin-top: 6px;
+}
+
+#navWebName{
+	width: 112px;
+	height: 50px;
+}
+
+#navLogin{
+	position: relative;
+	left: 588px;
+	width: 56px;
+	height: 50px;
+}
+
+#navRegister{
+	position: relative;
+	left: 612px;
+	width: 56px;
+	height: 50px;
+}
+
+
+.clear{
+	clear: both;
+}
+
+#navHome{
+	width: 100px;
+	height: 50px;
+}
+
+#navChat{
+	position: relative;
+	left: 30px;
+	width: 82px;
+	height: 50px;
+}
+
+.navS2A{
+	width: 80px;
+	height: 40px;
+	margin-top: 5px;
+	line-height: 40px;
+	background-color: black;
+	border-radius: 10px;
+}
+
+#navSearchText{
+	position: relative;
+	left: 70px;
+	width: 620px;
+	height: 50px;
+}
+
+#inputSearch{
+	margin-top: 8px;
+	width: 620px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#navSearchIcon{
+	position: relative;
+	left: 85px;
+	width: 46px;
+	height: 50px;
+}
+
+/* Web's Section*/
+.section{
+	height: 900px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#articleSection{
+	width: 900px;
+	position: relative;
+	top: 30px;
+}
+
+#articleContent{
+	width: 900px;
+	height: 85px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#commentText{
+	width: 900px;
+	height: 70px;
+	padding: 0px;
+}
+
+#commentBtn{
+	position: relative;
+	top: 0px;
+	left: 405px;
+	width: 90px;
+	height: 28px;
+	padding: 0px;
+	background-color: #0000CC;
+}
+
+#pencil{
+	width: 20px;
+	height: 20px;
+	float: left;
+	position: relative;
+	left: 20px;
+}
+
+#btnWord{
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	left: 20px;
+}
+
+.floorBox{
+	width: 900px;
+	/*box-shadow: 5px 5px 5px #888888;*/
+}
+
+#floorBox1{
+	position: relative;
+	top: 60px;
+}
+
+#floorBox2{
+	position: relative;
+	top: 100px;
+}
+
+#floorBox3{
+	position: relative;
+	top: 140px;
+}
+
+
+.floor,
+.floorInfo,
+.floorContent{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.floorInfo,
+.floorContent{
+	float: left;
+}
+
+.floorMsg{
+	width: 900px;
+	height: 80px;
+}
+
+.floorInfo{
+	width: 80px;
+	height: 80px;
+}
+
+.floorContent{
+	width: 816px;
+	height: 80px;
+}
+
+.floorReply,{
+	width: 900px;
+}
+
+.replyText{
+	width: 807px;
+	height: 28px;
+	float: left;
+	padding: 0px;
+}
+
+.replyBtn{
+	width: 90px;
+	height: 30px;
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.replyContentSpecial{
+	width: 807px;
+	height: 28px;
+	float: left;
+	padding: 0px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.replyContent{
+	width: 896px;
+	height: 28px;
+	float: left;
+	padding: 0px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.replyWordSpecial{
+	position: relative;
+	right: 355px;
+}
+
+.replyWord{
+	position: relative;
+	right: 400px;
+}
+
+
+/* Web's Footer*/
+.footer{
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	line-height: 50px;
+}
+

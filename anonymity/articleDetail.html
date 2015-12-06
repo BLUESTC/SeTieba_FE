@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArticleDetail</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="css/articleDetail.css">
+</head>
+<body>
+	<div class="bodyBlank"></div>
+	<center>
+		<div class="bodyCenter">
+			<div class="nav">
+				<div id="navSection1">
+					<div class="navItem" id="navLogo">
+						<img id="logoImg" src="img/png/logo-small.png">
+					</div>
+
+					<div class="navItem" id="navWebName">
+						<a href="home.html">匿名贴吧</a>
+					</div>
+
+					<div class="navItem" id="navLogin">
+						<a href="login.html">登录</a>
+					</div>
+
+					<div class="navItem" id="navRegister">
+						<a href="register.html">注册</a>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<div id="navSection2">
+					<div class="navItem" id="navHome">
+						<div class="navS2A"><a href="home.html">首页</a></div>
+					</div>
+
+					<div class="navItem" id="navChat">
+						<div class="navS2A"><a href="chat.html">聊天</a></div>
+					</div>
+
+					<div class="navItem" id="navSearchText">
+						<input id="inputSearch" type="text" placeholder="搜索帖子,话题" />
+					</div>
+
+					<div class="navItem" id="navSearchIcon">
+						<a href=""><img src="img/png/search.png"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header"></div>
+
+			<div class="section">
+				<div id="articleSection">
+					<div id="articleContent">
+						QQ空间的前端技术水平如何？
+     				感觉挺复杂，挺卡的一个东西，或者说加载比较缓慢？只是打开Qzone首页，鼠标没有移动到屏幕的任何元素上，也没有进行任何点击，就有295个请求，图片就不说，很合理，但是却加载了114个JavaScript文件。前端性能优化原则难道不是尽量合并请求吗？ 
+					</div>
+
+					<textarea id="commentText"></textarea>
+
+					<button id="commentBtn">
+						<img id="pencil" src="img/png/pencil.png">
+						<div id="btnWord">评论</div>
+					</button>
+				</div>
+				
+				<div class="floorBox" id="floorBox1">
+					<div class="floorMsg">
+						<div class="floorInfo">1</div>
+						<div class="floorContent">第一条评论</div>
+					</div>
+
+					<div class="floorReply">
+						<div>
+							<textarea class="replyText"></textarea>
+							<button class="replyBtn">回复</button>
+						</div>
+
+						
+					</div>
+				</div>
+
+
+
+				<div class="floorBox" id="floorBox2">
+					<div class="floorMsg">
+						<div class="floorInfo">2</div>
+						<div class="floorContent"></div>
+					</div>
+
+					<div class="floorReply">
+						<div>
+							<textarea class="replyText"></textarea>
+							<button class="replyBtn">回复</button>
+						</div>
+
+						<div>
+							<div class="replyContentSpecial"><div class="replyWordSpecial">第一条回复</div></div>
+							<button class="replyBtn">展开</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="floorBox" id="floorBox3">
+					<div class="floorMsg">
+						<div class="floorInfo">3</div>
+						<div class="floorContent"></div>
+					</div>
+
+					<div class="floorReply">
+						<div>
+							<textarea class="replyText"></textarea>
+							<button class="replyBtn">回复</button>
+						</div>
+
+						<div>
+							<div class="replyContent"><div class="replyWord">第一条回复</div></div>
+						</div>
+
+						<div>
+							<div class="replyContent"><div class="replyWord">第二条回复</div></div>
+						</div>
+
+						<div>
+							<div class="replyContent"><div class="replyWord">第三条回复</div></div>
+						</div>
+
+						<div>
+							<div class="replyContentSpecial"><div class="replyWordSpecial">第四条回复</div></div>
+							<button class="replyBtn">收起</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				底部信息栏：版权、联系方式......
+			</div>
+		</div>
+	</center>
+	<div class="blank"></div>
+</body>
+</html>
