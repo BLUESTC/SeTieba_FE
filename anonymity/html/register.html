@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NewArticle</title>
+	<title>Register</title>
 	<meta charset = "utf-8">
-	<link rel="stylesheet" type="text/css" href="css/newArticle.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
 </head>
 <body>
 	<div class="bodyBlank"></div>
@@ -12,7 +12,7 @@
 			<div class="nav">
 				<div id="navSection1">
 					<div class="navItem" id="navLogo">
-						<img id="logoImg" src="img/png/logo-small.png">
+						<img id="logoImg" src="../img/png/logo-small.png">
 					</div>
 
 					<div class="navItem" id="navWebName">
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="navItem" id="navSearchIcon">
-						<a href=""><img src="img/png/search.png"></a>
+						<a href=""><img src="../img/png/search.png"></a>
 					</div>
 				</div>
 			</div>
@@ -52,31 +52,50 @@
 			<div class="header"></div>
 
 			<div class="section">
-				<div id="editBar">
-					<button id="releaseBtn">发布</button>
-					<img id="imgPencil" src="img/png/pencil.png">
-					<img id="imgFont" src="img/png/font.png">
-					<img id="imgImage" src="img/png/image.png">
-				</div>
-				
-				<div id="articleT">
-					<input id="articleTitle">
-				</div>
+				<div id="loginSection">
+					<table>
+						<tr>
+							<th colspan="2" align="center">
+								<img id="loginLogo" src="../img/png/logo-big.png">
+								<div id="loginWebName">匿名贴吧</div>
+							</th>
+						</tr>
 
-				<div id="select">
-					<div id="selectWord">请选择话题类型：</div>
-					<form id="selectForm">
-						<select name="topicType">
-							<option value="movie">电影</option>
-							<option value="travel">旅行</option>
-							<option value="cartoon">动漫</option>
-							<option value="food">美食</option>
-							</select>
-					</form>
-				</div>
+						<tr>
+							<td>用户昵称</td>
+							<td>
+								<input id="userName" class="inputText" type="text" name="userName" />
+							</td>
+						</tr>
+						
+						<tr>
+							<td>学生邮箱</td>
+							<td>
+								<input class="inputText" type="text" name="email" />
+							</td>
+						</tr>
 
-				<div id="articleC">
-					<textarea id="articleContent"></textarea>
+						<tr>
+							<td>初始密码</td>
+							<td>
+								<input class="inputText" type="password" name="password" />
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>确认密码</td>
+							<td>
+								<input class="inputText" type="password" name="confirmPassword" />
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" align="center">
+								<input id="loginButton" type="button" onclick="msg()" value="提交" />
+							</td>
+						</tr>	
+					</table>
 				</div>
 			</div>
 
@@ -86,5 +105,7 @@
 		</div>
 	</center>
 	<div class="blank"></div>
+
+	<script type="text/javascript" src="../js/register.js"></script>
 </body>
 </html>

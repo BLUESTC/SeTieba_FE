@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LoginFail</title>
+	<title>NewArticle</title>
 	<meta charset = "utf-8">
-	<link rel="stylesheet" type="text/css" href="css/loginFail.css">
+	<link rel="stylesheet" type="text/css" href="../css/newArticle.css">
 </head>
 <body>
 	<div class="bodyBlank"></div>
@@ -12,7 +12,7 @@
 			<div class="nav">
 				<div id="navSection1">
 					<div class="navItem" id="navLogo">
-						<img id="logoImg" src="img/png/logo-small.png">
+						<img id="logoImg" src="../img/png/logo-small.png">
 					</div>
 
 					<div class="navItem" id="navWebName">
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="navItem" id="navSearchIcon">
-						<a href=""><img src="img/png/search.png"></a>
+						<a href=""><img src="../img/png/search.png"></a>
 					</div>
 				</div>
 			</div>
@@ -52,8 +52,31 @@
 			<div class="header"></div>
 
 			<div class="section">
-				<div id="loginFailMsg">
-					您输入的秘密有误！
+				<div id="editBar">
+					<button id="releaseBtn">发布</button>
+					<img id="imgPencil" src="../img/png/pencil.png">
+					<img id="imgFont" src="../img/png/font.png">
+					<img id="imgImage" src="../img/png/image.png">
+				</div>
+				
+				<div id="articleT">
+					<input id="articleTitle">
+				</div>
+
+				<div id="select">
+					<div id="selectWord">请选择话题类型：</div>
+					<form id="selectForm">
+						<select name="topicType">
+							<option value="movie">电影</option>
+							<option value="travel">旅行</option>
+							<option value="cartoon">动漫</option>
+							<option value="food">美食</option>
+							</select>
+					</form>
+				</div>
+
+				<div id="articleC">
+					<textarea id="articleContent"></textarea>
 				</div>
 			</div>
 

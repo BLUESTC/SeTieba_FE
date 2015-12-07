@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>LoginFail</title>
 	<meta charset = "utf-8">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/loginFail.css">
 </head>
 <body>
 	<div class="bodyBlank"></div>
@@ -12,7 +12,7 @@
 			<div class="nav">
 				<div id="navSection1">
 					<div class="navItem" id="navLogo">
-						<img id="logoImg" src="img/png/logo-small.png">
+						<img id="logoImg" src="../img/png/logo-small.png">
 					</div>
 
 					<div class="navItem" id="navWebName">
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="navItem" id="navSearchIcon">
-						<a href=""><img src="img/png/search.png"></a>
+						<a href=""><img src="../img/png/search.png"></a>
 					</div>
 				</div>
 			</div>
@@ -52,38 +52,8 @@
 			<div class="header"></div>
 
 			<div class="section">
-				<div id="loginSection">
-					<table>
-						<tr>
-							<th colspan="2" align="center">
-								<img id="loginLogo" src="img/png/logo-big.png">
-								<div id="loginWebName">匿名贴吧</div>
-							</th>
-						</tr>
-
-						<tr>
-							<td>
-								<img src="img/png/email.png"></lable>
-							</td>
-
-							<td>
-								<input id="email" class="inputText" type="text" name="email" placeholder="学生邮箱/常用邮箱" />
-							</td>
-						</tr>
-
-						<tr>
-							<td><img src="img/png/key.png"></td>
-							<td>
-								<input id="password" class="inputText" type="password" name="password" placeholder="密码" />
-							</td>
-						</tr>
-
-						<tr>
-							<td colspan="2" align="center">
-								<input id="loginButton" type="button" onclick="msg()" value="登录" />
-							</td>
-						</tr>	
-					</table>
+				<div id="loginFailMsg">
+					您输入的密码有误！
 				</div>
 			</div>
 
@@ -93,7 +63,5 @@
 		</div>
 	</center>
 	<div class="blank"></div>
-
-	<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
