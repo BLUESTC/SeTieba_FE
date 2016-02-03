@@ -1,0 +1,162 @@
+body{
+	font: 100%/1.2 "Microsoft YaHei", Georgia, serif;
+	margin: 0;
+	background-color: rgb(238, 238, 238);
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.page{
+	margin: 0 auto;
+	max-width: 60em;
+}
+
+/* 页面级页眉 */
+.hbg-color{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	height: 4em;
+	background: -webkit-linear-gradient(rgb(48, 54, 67), rgb(44, 48, 59));
+}
+
+.g-masthead{
+	position: relative;
+	z-index: 2;
+	height: 4em;
+	color: white;
+}
+
+.g-masthead li,
+.g-masthead a,
+.g-masthead strong{
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+}
+
+.g-masthead a{
+	width: 4em;
+	text-align: center;
+}
+
+.g-masthead img{
+	width: 3em;
+	height: 3em;
+	vertical-align: middle;
+}
+
+.g-masthead span{
+	font-weight: normal;
+	font-size: 0.5em;
+	vertical-align: super;
+}
+
+.g-masthead ul{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.g-masthead ul a{
+	color: inherit;
+}
+
+.g-masthead ul a:hover{
+	background-color: rgb(90, 90, 100);
+}
+
+.g-nav ul{
+	margin: 1em 0.5em;
+	padding: 0;
+}
+
+
+/* 全站导航 */
+.g-nav li,
+.g-nav a{
+	display: inline-block;
+	width: 6em;
+	height: 3em;
+	line-height: 3em;
+	background-color: white;
+	text-align: center;
+	color: black;
+}
+
+.g-nav li:last-child{
+	width: 18.5em;
+	margin-top: 1em;
+}
+
+.g-nav a:hover{
+	background-color: rgb(30, 120, 207); 
+	color: white;
+}
+
+.g-nav li[class="li-third"]:hover .subnav{
+	left: auto;
+}
+
+ul[class="subnav"]{
+	margin: 0;
+	position: absolute;
+	left: -999em;
+	z-index: 3;
+}
+
+.subnav li:last-child{
+	width: 6em;
+	margin-top: 0px;
+}
+
+.subnav li{
+	display: block;
+	margin: 0;
+	border-top: 0.1em solid rgb(238, 238, 238);
+}
+
+.btn{
+	border: 0;
+	font-family: "Microsoft YaHei";
+	background-color: rgb(30, 120, 207);
+	color: white;
+	cursor: pointer;
+}
+
+label[for="search"]{
+	cursor: pointer;
+}
+
+
+/* 页面级页脚 */
+.g-footer{
+	clear: both;
+}
+
+.fbg-color{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	height: 4em;
+	background: -webkit-linear-gradient(rgb(48, 54, 67), rgb(44, 48, 59));
+}
+
+.g-footer p{
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	padding-left: 1em;
+	padding-top: 1em;
+	color: white;
+}

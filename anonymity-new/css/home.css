@@ -1,0 +1,60 @@
+.m-slides img{
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.main{
+	width: 80%;
+	float: left;
+}
+
+.post{
+	width: 100%;
+	background-color: white;
+	margin-left: 0.5em;
+}
+
+.post h1{
+	margin: 1em 0 0.1em;
+	width: 100%;
+}
+
+.post img{
+	max-width: 3em;
+	float: left;
+}
+
+.post-blurb{
+	width: 90%;
+}
+
+.post footer{
+	clear: left;
+}
+
+.post:last-child{
+	margin-bottom: 1.5em;
+}
+
+aside{
+	float: right;
+	width: 16%;
+	margin-top: 1.5em;
+	margin-right: 0.5em;
+	background-color: white;
+}
+
+aside ul{
+	margin: 0;
+	padding-top: 1em;
+	padding-left: 1em;
+}
+
+aside ul ul{
+	padding-top: 0;
+}
+
+aside li{
+	padding-top: 0.5em;
+}

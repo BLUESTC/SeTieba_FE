@@ -1,0 +1,14 @@
+.g-main section{
+	width: 100%;
+	height: 20em;
+	line-height: 20em;
+	background-color: white;
+}
+
+.g-main section:last-child{
+	margin-bottom: 1em;
+}
+
+.g-main h1{
+	text-align: center;
+}
