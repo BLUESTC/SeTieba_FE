@@ -39,7 +39,7 @@
 			</li>
 			<li>
 				<label for="search" class="lable-search">搜索：</label>
-				<input type="search" id="search" placeholder="一个贴吧/一个帖子">
+				<input type="search" id="search" placeholder="一个贴吧或帖子">
 				<input type="submit" value="搜索" class="btn-search">
 			</li>
 		</ul>
@@ -51,9 +51,9 @@
 		<div class="m-login" id="login-bar">
 			<div class="tab item">登录<button id="btn-close"><img src="img/close.png"></button></div>
 			<div class="title item">蒙面侠<span>匿名贴吧</span></div>
-			<div class="email item"><img src="img/email.png"><input placeholder="学生邮箱/常用邮箱"/></div>
-			<div class="password item"><img src="img/key.png"><input placeholder="密码"/></div>
-			<div class="loginBtn item" id="btn-login"><button>登&nbsp;&nbsp;录</button></div>
+			<div class="email item"><img src="img/email.png"><input  id="email" placeholder="学生邮箱/常用邮箱" onfocus="stycleChange()"/></div>
+			<div class="password item"><img src="img/key.png"><input  id="password" placeholder="密码" type="password" onfocus="stycleChange()"/></div>
+			<div class="loginBtn item"><button id="btn-login">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button></div>
 			<div class="tip item"><a href="register.html">忘记密码？</a><a href="register.html">立即注册！</a></div>
 		</div>
 	</div>
@@ -93,24 +93,24 @@
 
 			<div class="fields">
 				<div class="row">
-					<label for="street-address">街道地址:</label>
-					<input type="text" id="street-address" name="street_address" class="field-large" />
+					<label for="state">省份:</label>
+					<select id="state" name="state">
+						<option value="AL">北京</option>
+						<option value="AK">上海</option>
+						<option value="CA">四川</option>
+						<option value="CO">浙江</option>
+					</select>
 				</div>
 				<div class="row">
 					<label for="city">城市:</label>
 					<input type="text" id="city" name="city" class="field-large" />
 				</div>
 				<div class="row">
-					<label for="state">省份:</label>
-					<select id="state" name="state">
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-					</select>
+					<label for="street-address">街道:</label>
+					<input type="text" id="street-address" name="street_address" class="field-large" />
 				</div>
 				<div class="row">
-					<label for="zip-code">邮编码:</label>
+					<label for="zip-code">邮政编码:</label>
 					<input type="text" id="zip-code" name="zip_code" class="field-small" />
 				</div>
 			</div>
@@ -128,7 +128,11 @@
 					<p class="instructions">Maximum size of 700k. JPG, GIF or PNG.</p>
 				</div>
 				<p class="row">
-					<label for="screen-name">用户名:</label>
+					<label for="shcool">学校:</label>
+					<input type="text" id="shcool" name="shcool" class="field-medium" />
+				</p>
+				<p class="row">
+					<label for="user-name">用户名:</label>
 					<input type="text" id="user-name" name="user_name" class="field-medium" />
 				</p>
 				<div class="row">
@@ -159,21 +163,21 @@
 		
 			<!-- START EMAILS FIELDS -->
 			<fieldset>
-			<h2 class="hdr-emails">邮箱隐私</h2>
+			<h2 class="hdr-emails">邮箱设置</h2>
 			<div class="fields checkboxes">
 				<div class="row">
 					<input type="checkbox" id="email-ok-msg-from-users" name="email_signup[]" value="user-emails" />
-					<label for="email-ok-msg-from-users">It is okay to email me with messages from other users.</label>
+					<label for="email-ok-msg-from-users">允许其他用户发送邮件给我。</label>
 				</div>
 				<div class="row">
 					<input type="checkbox" id="email-ok-occasional-updates" name="email_signup[]" value="occasional-updates" />
-					<label for="email-ok-occasional-updates">It is okay to email me with occasional promotions about our other products.</label>
+					<label for="email-ok-occasional-updates">允许发送产品的推广消息到我的邮箱。</label>
 				</div>    			
 			</div>
 			</fieldset>
 			<!-- end emails -->
 		
-			<input type="submit" value="Create Account" class="btn" />
+			<input type="submit" value="创建账号" class="btn" />
 		</form>
 	</main>
 

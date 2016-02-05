@@ -39,7 +39,7 @@
 			</li>
 			<li>
 				<label for="search" class="lable-search">搜索：</label>
-				<input type="search" id="search" placeholder="一个贴吧/一个帖子">
+				<input type="search" id="search" placeholder="一个贴吧或帖子">
 				<input type="submit" value="搜索" class="btn-search">
 			</li>
 		</ul>
@@ -49,11 +49,11 @@
 	<div class="m-mask" id="mask"></div>
 	<div id="login-bar-parent">
 		<div class="m-login" id="login-bar">
-			<div class="tab item">登录<button id="btn-close" title="关闭"><img src="img/close.png"></button></div>
+			<div class="tab item">登录<button id="btn-close"><img src="img/close.png"></button></div>
 			<div class="title item">蒙面侠<span>匿名贴吧</span></div>
-			<div class="email item"><img src="img/email.png"><input placeholder="学生邮箱/常用邮箱"/></div>
-			<div class="password item"><img src="img/key.png"><input placeholder="密码"/></div>
-			<div class="loginBtn item" id="btn-login"><button>登&nbsp;&nbsp;录</button></div>
+			<div class="email item"><img src="img/email.png"><input  id="email" placeholder="学生邮箱/常用邮箱" onfocus="stycleChange()"/></div>
+			<div class="password item"><img src="img/key.png"><input  id="password" placeholder="密码" type="password" onfocus="stycleChange()"/></div>
+			<div class="loginBtn item"><button id="btn-login">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button></div>
 			<div class="tip item"><a href="register.html">忘记密码？</a><a href="register.html">立即注册！</a></div>
 		</div>
 	</div>
