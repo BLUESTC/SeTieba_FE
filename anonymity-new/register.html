@@ -31,23 +31,23 @@
 			<li><a href="home.html">首页</a></li>
 			<li><a href="posts.html">贴吧</a></li>
 			<li class="li-third"><a href="download-app.html">下载APP</a>
-				<ul class="subnav">
+				<ul class="submenu">
 					<li><a href="download-app.html#dl-android">Android</a></li>
 					<li><a href="download-app.html#dl-ios">IOS</a></li>
 					<li><a href="download-app.html#dl-uwp">UWP</a></li>
 				</ul>
 			</li>
 			<li>
-				<label for="search">搜索：</label>
-				<input type="search" id="search" placeholder="一个贴吧或者一个帖子">
-				<input type="submit" value="搜索" class="btn">
+				<label for="search" class="lable-search">搜索：</label>
+				<input type="search" id="search" placeholder="一个贴吧/一个帖子">
+				<input type="submit" value="搜索" class="btn-search">
 			</li>
 		</ul>
 	</nav>
 
 	<!-- 登录界面 -->
 	<div class="m-mask" id="mask"></div>
-	<div id="test">
+	<div id="login-bar-parent">
 		<div class="m-login" id="login-bar">
 			<div class="tab item">登录<button id="btn-close"><img src="img/close.png"></button></div>
 			<div class="title item">蒙面侠<span>匿名贴吧</span></div>
@@ -59,8 +59,122 @@
 	</div>
 
 	<!-- 主体内容 -->
-	<main class="g-main">
-		<h1>Register</h1>
+	<main class="m-register" role="main">
+		<h1>创建一个新账号</h1>
+		<form>
+			<!-- START ACCOUNT FIELDS -->
+			<fieldset>
+			<h2 class="hdr-account">账号</h2>
+
+			<div class="fields">
+				<p class="row">
+					<label for="email">学生邮箱:</label>
+					<input type="email" id="email" name="email" placeholder="yourname@example.com" class="field-large" />
+				</p>
+				<p class="row">
+					<label for="email">常用邮箱:</label>
+					<input type="email" id="email" name="email" placeholder="yourname@example.com" class="field-large" />
+				</p>
+				<p class="row">
+					<label for="password">密码:</label>
+					<input type="password" id="password" name="password" />
+				</p>
+				<p class="row">
+					<label for="password2">重复密码:</label>
+					<input type="password" id="password2" name="password2" />
+				</p>
+			</div>
+			</fieldset>
+			<!-- end account -->
+		
+			<!-- START ADDRESS FIELDS -->
+			<fieldset>
+			<h2 class="hdr-address">地址</h2>
+
+			<div class="fields">
+				<div class="row">
+					<label for="street-address">街道地址:</label>
+					<input type="text" id="street-address" name="street_address" class="field-large" />
+				</div>
+				<div class="row">
+					<label for="city">城市:</label>
+					<input type="text" id="city" name="city" class="field-large" />
+				</div>
+				<div class="row">
+					<label for="state">省份:</label>
+					<select id="state" name="state">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+					</select>
+				</div>
+				<div class="row">
+					<label for="zip-code">邮编码:</label>
+					<input type="text" id="zip-code" name="zip_code" class="field-small" />
+				</div>
+			</div>
+			</fieldset>
+			<!-- end address -->
+		
+			<!-- START PUBLIC PROFILE FIELDS -->
+			<fieldset>
+			<h2 class="hdr-public-profile">公开信息</h2>
+
+			<div class="fields">
+				<div class="row">
+					<label for="picture">头像:</label>
+					<input type="file" id="picture" name="picture" />
+					<p class="instructions">Maximum size of 700k. JPG, GIF or PNG.</p>
+				</div>
+				<p class="row">
+					<label for="screen-name">用户名:</label>
+					<input type="text" id="user-name" name="user_name" class="field-medium" />
+				</p>
+				<div class="row">
+					<label for="website">个人网站:</label>
+					<input type="url" id="website" name="website" placeholder="http://www.example.com" class="field-large" />
+					<p class="instructions">Have a homepage or a blog? Put the address here, <br />beginning with <kbd>http://</kbd> or <kbd>https://</kbd>.</p>
+				</div>
+				<p class="row">
+					<label for="bio">个人简介:</label>
+					<textarea id="bio" name="bio" cols="40" rows="5" class="field-large"></textarea>
+				</p>
+				<div class="row">
+					<fieldset class="radios">
+						<legend>性别:</legend>
+						<p class="row">
+							<input type="radio" id="gender-male" name="gender" value="male" />
+							<label for="gender-male">男</label>
+						</p>
+						<p class="row">
+							<input type="radio" id="gender-female" name="gender" value="female" />
+							<label for="gender-female">女</label>
+						</p>
+					</fieldset>
+				</div>
+			</div>
+			</fieldset>
+			<!-- end public profile -->
+		
+			<!-- START EMAILS FIELDS -->
+			<fieldset>
+			<h2 class="hdr-emails">邮箱隐私</h2>
+			<div class="fields checkboxes">
+				<div class="row">
+					<input type="checkbox" id="email-ok-msg-from-users" name="email_signup[]" value="user-emails" />
+					<label for="email-ok-msg-from-users">It is okay to email me with messages from other users.</label>
+				</div>
+				<div class="row">
+					<input type="checkbox" id="email-ok-occasional-updates" name="email_signup[]" value="occasional-updates" />
+					<label for="email-ok-occasional-updates">It is okay to email me with occasional promotions about our other products.</label>
+				</div>    			
+			</div>
+			</fieldset>
+			<!-- end emails -->
+		
+			<input type="submit" value="Create Account" class="btn" />
+		</form>
 	</main>
 
 	<!-- 页面级页脚 -->

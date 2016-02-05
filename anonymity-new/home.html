@@ -30,27 +30,26 @@
 		<ul>
 			<li><a href="home.html">首页</a></li>
 			<li><a href="posts.html">贴吧</a></li>
-			<li class="li-third"><a href="download-app.html">下载APP</a>
-				<ul class="subnav">
+			<li><a href="download-app.html">下载APP</a>
+				<ul class="submenu">
 					<li><a href="download-app.html#dl-android">Android</a></li>
 					<li><a href="download-app.html#dl-ios">IOS</a></li>
 					<li><a href="download-app.html#dl-uwp">UWP</a></li>
 				</ul>
 			</li>
 			<li>
-				<label for="search">搜索：</label>
-				<input type="search" id="search" placeholder="一个贴吧或者一个帖子">
-				<input type="submit" value="搜索" class="btn">
+				<label for="search" class="lable-search">搜索：</label>
+				<input type="search" id="search" placeholder="一个贴吧/一个帖子">
+				<input type="submit" value="搜索" class="btn-search">
 			</li>
 		</ul>
-
 	</nav>
 
 	<!-- 登录界面 -->
 	<div class="m-mask" id="mask"></div>
-	<div id="test">
+	<div id="login-bar-parent">
 		<div class="m-login" id="login-bar">
-			<div class="tab item">登录<button id="btn-close"><img src="img/close.png"></button></div>
+			<div class="tab item">登录<button id="btn-close" title="关闭"><img src="img/close.png"></button></div>
 			<div class="title item">蒙面侠<span>匿名贴吧</span></div>
 			<div class="email item"><img src="img/email.png"><input placeholder="学生邮箱/常用邮箱"/></div>
 			<div class="password item"><img src="img/key.png"><input placeholder="密码"/></div>
