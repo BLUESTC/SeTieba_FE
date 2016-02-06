@@ -1,0 +1,32 @@
+/*.hot-bar{
+	max-width: 60em;
+}*/
+
+.g-main h1{
+	padding-left: 0.5em;
+/*	margin-bottom: 0.5em;*/
+}
+
+.bar{
+	clear: left;
+	width: 15.4em;
+	display: inline-block;
+	background-color: white;
+	margin: 0.2em;
+	color: black;
+}
+
+.bar img{
+	float: left;
+	margin: 0.4em;
+}
+
+.bar h2{
+	/*padding-top: 0.1em;*/
+	margin: 0.2em 0;		
+}
+
+.hot-bar footer{
+	margin-top: 1em;
+	margin-right: 1em;
+}

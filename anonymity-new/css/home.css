@@ -4,7 +4,7 @@
 	display: block;
 }
 
-.main{
+.g-main{
 	width: 80%;
 	float: left;
 }
@@ -14,6 +14,7 @@
 	background-color: white;
 	margin-left: 0.5em;
 	border-radius: 1em;
+	color: black;
 }
 
 .post h1{
@@ -44,7 +45,7 @@
 	margin-bottom: 1.5em;
 }
 
-.main footer{
+.g-main footer{
 	text-align: right;
 	/*margin-top: 1em;*/
 	margin-bottom: 1.5em;
@@ -74,7 +75,8 @@ aside{
 aside h1{
 	margin: 0;
 	padding: 0.5em;
-	padding-bottom: 0;
+	/*padding-bottom: 0;*/
+	border-bottom: 0.1em solid rgb(238, 238, 238);
 }
 
 aside ul{
