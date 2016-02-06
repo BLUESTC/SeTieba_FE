@@ -120,7 +120,8 @@ ul[class="submenu"]{
 	margin: 0;
 }
 
-.g-nav li:hover .submenu{
+.g-nav li:hover .submenu,
+#user-bar li:hover .user-submenu{
 	left: auto;
 }
 
@@ -199,7 +200,8 @@ input[class="btn-search"]{
 
 
 /* 登录界面 */
-#hbtn-login{
+#hbtn-login,
+#hbtn-lgout{
 	display: inline-block;
 	width: 4em;
 	height: 4em;
@@ -211,7 +213,8 @@ input[class="btn-search"]{
 	background: -webkit-linear-gradient(rgb(48, 54, 67), rgb(44, 48, 59));
 }
 
-#hbtn-login:hover{
+#hbtn-login:hover,
+#hbtn-lgout:hover{
 	background: rgb(90, 90, 100);
 }
 
@@ -332,4 +335,26 @@ input[class="btn-search"]{
 .invalid{
 	border-color: red;
 	color: red;
+}
+
+/* user-bar */
+#user-bar{
+	visibility: hidden;
+}
+
+ul[class="user-submenu"]{
+	left: -999em;
+	top: auto;
+	right: auto;
+	background: -webkit-linear-gradient(rgb(48, 54, 67), rgb(44, 48, 59));
+}
+
+.user-submenu li,
+.user-submenu a{
+	display: block;
+	border-bottom: 0.1em solid rgb(238, 238, 238);
+}
+
+.user-submenu a:hover{
+	background: rgb(90, 90, 100);
 }
