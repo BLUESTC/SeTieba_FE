@@ -19,22 +19,22 @@ h2 {
 	box-shadow: 3px 3px 3px #ccc;
 	color: #fff;
 	font-size: 1.1em;
-	margin: 12px;
+	margin: .2em;
 	padding: 0.3em 1em;
 	text-shadow: #9FBEB9 1px 1px 1px;
 	text-transform: uppercase;
 }
 
-.hdr-account 				{ background-color: #0B5586; }
-.hdr-address 				{ background-color: #4494C9; }
-.hdr-public-profile 		{ background-color: #377D87; }		
-.hdr-emails 				{ background-color: #717F88; }
+.hdr-account 		{ background-color: #0B5586; }
+.hdr-address 		{ background-color: #4494C9; }
+.hdr-public-profile { background-color: #377D87; }		
+.hdr-emails 		{ background-color: #717F88; }
 
 fieldset {
 	background-color: #f1f1f1;
 	border: none;
 	border-radius: 2px;
-	margin-bottom: 12px;
+	margin-bottom: .75em;
 	overflow: hidden;
 	padding: 0 .625em; /* 10px/16px */
 }
@@ -42,8 +42,8 @@ fieldset {
 .fields {
 	background-color: #fff;
 	border: 1px solid #eaeaea;
-	margin: .75em;
-	padding: .75em;
+	margin: .2em;
+	padding: .2em;
 }
 
 .fields .row {
@@ -55,31 +55,29 @@ label {
 	display: inline-block;
 	padding: 3px 6px;
 	text-align: right;
-	width: 150px;
+	/*width: 150px;*/
+	width: 4.3em;
 	vertical-align: top;
 }
 
 .required { /* the asterisk */
 	color: red;
-display: none;
-}
-
-input,
-select,
-button {
-	font: inherit;
+	display: none;
 }
 
 .field-small {
-	width: 75px;
+	/*width: 75px;*/
+	width: 4.5em;
 }
 
 .field-medium {
-	width: 150px;
+	/*width: 150px;*/
+	width: 9em;
 }
 
 .field-large {
-	width: 250px;
+	/*width: 250px;*/
+	width: 10em;
 }
 
 select {
@@ -91,16 +89,15 @@ textarea {
 	padding: 2px;
 }
 
-.instructions {
-	font-size: .75em;
-	padding-left: 167px;
-	font-style: italic;
-		margin: .5em 0 1.2em;
+input[class="picture"]{
+	background-color: blue;
 }
 
-.instructions kbd {
-	font-size: 1.23em;
-	font-style: normal;
+.instructions {
+	font-size: .75em;
+	padding-left: 2.5em;
+	font-style: italic;
+	margin: .5em 0 1.2em;
 }
 
 .btn {
@@ -114,12 +111,6 @@ textarea {
 	text-shadow: 1px 1px 0px #777;
 }
 
-.btn-reset {
-	background-color: #8e5303;
-	color: #eee;
-	margin-left: 35px;
-}
-
 /* :::: Radio Buttons :::: */
 .radios {
 	background-color: transparent;
@@ -128,7 +119,7 @@ textarea {
 }
 
 .radios .row {
-	margin: 0 0 0 150px;
+	margin: 0 0 0 4.5em;
 }
 
 .radios legend {
@@ -137,13 +128,13 @@ textarea {
 	position: absolute;
 	text-align: right;
 	top: 2px;
-	width: 148px;
-	*width: 143px; /* a hack for IE7 */
+	width: 4em;
+	*width: 4em; /* a hack for IE7 */
 }
 
 .radios label {
 	padding-left: 2px;
-	margin-right: 5px;
+	/*margin-right: 5px;*/
 	vertical-align: middle;
 	width: auto;
 }
@@ -151,7 +142,7 @@ textarea {
 /* :::: Checkboxes :::: */
 .checkboxes label {
 	text-align: left;
-	width: 475px;
+	width: 85%;
 }
 
 button * {

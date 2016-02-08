@@ -5,14 +5,17 @@
 }
 
 .g-main{
-	width: 80%;
-	float: left;
+	/*width: 80%;
+	float: left;*/
+
+	width: 100%;
 }
 
 .post{
 	width: 100%;
 	background-color: white;
-	margin-left: 0.5em;
+	/*margin-left: 0.5em;
+	margin-right: 0.5em;*/
 	border-radius: 1em;
 	color: black;
 }
@@ -31,8 +34,7 @@
 }
 
 .post-blurb{
-	width: 90%;
-	/*padding: 0.4em;*/
+	padding: 0 0.2em;
 }
 
 .post footer{
@@ -64,10 +66,14 @@
 
 /* 侧边导航栏 */
 aside{
-	float: right;
-	width: 16%;
+	/*float: right;
+	width: 16%;*/
+	
+	width: 100%;
+
 	margin-top: 1.5em;
-	margin-right: 0.5em;
+	margin-bottom: 1.5em;
+	/*margin-right: 0.5em;*/
 	border-radius: 1em;
 	background-color: white;
 }
@@ -85,12 +91,18 @@ aside ul{
 	padding-left: 1em;
 }
 
-aside ul:last-child{
+.more{
 	padding-bottom: 0.5em;
+	text-align: right;
 }
 
 aside ul ul{
 	padding-top: 0;
+	/*display: inline-block;*/
+}
+
+aside ul ul li{
+	display: inline-block;
 }
 
 aside li{
@@ -101,3 +113,16 @@ aside li:first-child{
 	padding-top: 0;
 }
 
+
+@media only screen and (min-width: 48em){
+	.g-main{
+		width: 80%;
+		float: left;
+	}
+
+	/* 侧边导航栏 */
+	aside{
+		float: right;
+		width: 16%;
+	}
+}
