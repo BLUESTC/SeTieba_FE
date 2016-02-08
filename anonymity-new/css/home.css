@@ -24,6 +24,13 @@
 	width: 100%;
 	margin: 1em 0 0.1em;
 	border-bottom: 0.1em solid rgb(238, 238, 238);
+	/*padding: 0.4em;
+	  默认的盒模型的 width 指的是内容的宽度，不包含 padding 和 border，
+	  由于此处的 width 为100%，若再加上0.4em的 padding，则这多出的 padding
+	  将超出页面的正常范围，使得页面出现水平滚动条，破环页面的美观性，
+	  可通过以下方法解决这个问题 
+	*/
+	box-sizing: border-box;
 	padding: 0.4em;
 }
 

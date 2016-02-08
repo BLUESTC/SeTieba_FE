@@ -19,7 +19,7 @@ h2 {
 	box-shadow: 3px 3px 3px #ccc;
 	color: #fff;
 	font-size: 1.1em;
-	margin: .2em;
+	margin: .1em;
 	padding: 0.3em 1em;
 	text-shadow: #9FBEB9 1px 1px 1px;
 	text-transform: uppercase;
@@ -33,7 +33,7 @@ h2 {
 fieldset {
 	background-color: #f1f1f1;
 	border: none;
-	border-radius: 2px;
+	border-radius: 0.125em;
 	margin-bottom: .75em;
 	overflow: hidden;
 	padding: 0 .625em; /* 10px/16px */
@@ -41,9 +41,9 @@ fieldset {
 
 .fields {
 	background-color: #fff;
-	border: 1px solid #eaeaea;
-	margin: .2em;
-	padding: .2em;
+	border: 0.0625em solid #eaeaea;
+	margin: .1em;
+	padding: .1em;
 }
 
 .fields .row {
@@ -53,10 +53,10 @@ fieldset {
 label {
 	cursor: pointer;
 	display: inline-block;
-	padding: 3px 6px;
+	padding: 0.1875em 0.375em;
 	text-align: right;
 	/*width: 150px;*/
-	width: 4.3em;
+	width: 5em;
 	vertical-align: top;
 }
 
@@ -77,7 +77,7 @@ label {
 
 .field-large {
 	/*width: 250px;*/
-	width: 10em;
+	width: 9.5em;
 }
 
 select {
@@ -86,11 +86,11 @@ select {
 
 textarea {
 	font: inherit;
-	padding: 2px;
+	padding: 0.125em;
 }
 
-input[class="picture"]{
-	background-color: blue;
+#picture{
+	width: 60%;
 }
 
 .instructions {
@@ -124,16 +124,16 @@ input[class="picture"]{
 
 .radios legend {
 	left: 0;
-	padding: 0 6px;
+	padding: 0 0.375em;
 	position: absolute;
 	text-align: right;
-	top: 2px;
+	top: 0.125em;
 	width: 4em;
 	*width: 4em; /* a hack for IE7 */
 }
 
 .radios label {
-	padding-left: 2px;
+	padding-left: 0.125em;
 	/*margin-right: 5px;*/
 	vertical-align: middle;
 	width: auto;
@@ -147,4 +147,39 @@ input[class="picture"]{
 
 button * {
 	vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 48em){
+	h2 {
+		margin: .75em;
+	}
+
+	.fields {
+		margin: .75em;
+		padding: .75em;
+	}
+
+
+	label {
+		/*width: 150px;*/
+		width: 9.5em;
+	}
+
+	.field-large {
+		width: 15.5em;
+	}
+
+	.radios .row {
+	margin: 0 0 0 9.5em;
+	}
+
+	.radios legend {
+		width: 9.2em;
+		*width: 9em;/* a hack for IE7 */
+	}
+
+	.radios label {
+		margin-right: 0.3125em;
+	}
 }

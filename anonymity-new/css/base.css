@@ -185,7 +185,8 @@ input[class="btn-search"]{
 
 .btn-search{
 	display: inline;
-	width: 2.8em;
+	/*width: 2.8em;*/
+	width: 4em;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -338,6 +339,10 @@ input[class="btn-search"]{
 	padding-right: 0.7em;
 }
 
+.loginBtn{
+	text-align: center;
+}
+
 .loginBtn button{
 	/*width: 28.5em;
 	height: 2.5em;*/
@@ -446,7 +451,7 @@ ul[class="user-submenu"]{
 
 	.g-nav li,
 	.g-nav a{
-		width: 9.2em;
+		width: 9.1em;
 
 		/*width: 32%;*/
 
@@ -522,7 +527,7 @@ ul[class="user-submenu"]{
 	}
 
 	.loginBtn button{
-		width: 28.5em;
+		width: 27.5em;
 		height: 2.5em;
 	}
 
