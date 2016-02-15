@@ -35,7 +35,19 @@ hbtn_login.onclick = function(){
 }
 
 var btn_close = document.getElementById("btn-close");
-var close_onclick = function(){
+// ie?
+// var close_onclick = function(){
+// 	var	mask = document.getElementById("mask");
+// 	mask.style.visibility = "hidden";
+
+// 	var login_bar = document.getElementById("login-bar");
+// 	login_bar.style.position = "absolute";
+// 	login_bar.style.left = "-999em";
+
+// 	var	login_bar_parent = document.getElementById("login-bar-parent");
+// 	login_bar_parent.style.cssText = "z-index: -1;";
+// };
+function close_onclick(){
 	var	mask = document.getElementById("mask");
 	mask.style.visibility = "hidden";
 
@@ -45,7 +57,7 @@ var close_onclick = function(){
 
 	var	login_bar_parent = document.getElementById("login-bar-parent");
 	login_bar_parent.style.cssText = "z-index: -1;";
-}
+};
 btn_close.onclick = close_onclick;
 
 
@@ -62,10 +74,18 @@ btn_login.onclick = function(){
   		localStorage.setItem("flag", true);
   		close_onclick();
   	}else{
-  		document.getElementById("email").className += ' invalid';
-  		document.getElementById("password").className += ' invalid';
+  		document.getElementById("email").className += ' input-invalid';
+  		document.getElementById("password").className += ' input-invalid';
   	}
 }
+
+/* 恢复边框的正常样式 */
+function stycleChange()
+{
+	document.getElementById("email").className = 'item email';
+  	document.getElementById("password").className = 'item password';
+}
+
 
 // 退出当前账号
 var hbtn_lgout = document.getElementById("hbtn-lgout");
@@ -80,10 +100,4 @@ hbtn_lgout.onclick = function(){
 }
 
 
-/* 恢复边框的正常样式 */
-function stycleChange()
-{
-	document.getElementById("email").className = 'email item';
-  	document.getElementById("password").className = 'password item';
-}
 

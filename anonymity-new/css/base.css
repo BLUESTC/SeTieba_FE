@@ -223,7 +223,7 @@ input[class="btn-search"]{
 
 
 
-/* 登录界面 */
+/* 登录注册导航栏 */
 #hbtn-login,
 #hbtn-lgout{
 	display: inline-block;
@@ -243,6 +243,7 @@ input[class="btn-search"]{
 	background: rgb(90, 90, 100);
 }
 
+/* 使登录框居中 */
 .m-mask{
 	visibility: hidden;
 	position: fixed;
@@ -261,44 +262,34 @@ input[class="btn-search"]{
 	position: absolute;
 	left: 0;
 	width: 100%;
-
-	/*height: 19.5em;*/
-	height: 14.4em;
-
 	z-index: -1;
 	text-align: center;
 }
 
+/* 登录框 */
 .m-login,
 .tab,
 .loginBtn button,
 #btn-close{
-	/*border-radius: 0.5em;*/
 	border-radius: 0.35em;
 }
-
 
 .m-login{
 	display: inline-block;
 	position: absolute;
 	left: -999em;
 
-	/*width: 25em;
-	height: 19.5em;*/
-
 	width: 18em;
-	height: 14.4em;
+	height: 14em;
 
 	background-color: white;
 	text-align: left;
 }
 
 .item{
-	/*margin-top: 1em;
-	padding-left: 0.5em;*/
-
-	margin-top: 0.7em;
-	padding-left: 0.35em;
+	width: 100%;
+	margin-top: 0.65em;
+	text-align: center;
 }
 
 .tab{
@@ -307,107 +298,86 @@ input[class="btn-search"]{
 	top: 0;
 	right: 0;
 	margin: 0;
-
-	/*line-height: 3em;*/
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-left: 2.5%;
 	line-height: 2.1em;
-
 	color: white;
 	background-color: rgb(51, 51, 51);
+	text-align: left;
 }
 
-.m-login input{
-	/*width: 22.5em;
-	height: 2.5em;*/
-	
-	width: 15.75em;
-	height: 1.75em;
-
-	font-family: "Microsoft YaHei", Georgia, serif;
+.tab button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3000;
+	line-height: 0.84em;
+	background-color: rgb(51, 51, 51);
+	border: 0;
+	padding: 0.28em;
 }
 
-.m-login img{
-	/*width: 3.75em;
-	height: 2.75em;*/
+.tab button:hover{
+	background: rgb(90, 90, 100);
+}
 
-	width: 2.925em;
+.tab button img{
+	width: 0.84em;
+	height: 0.84em;
+	padding: 0;
+}
+
+.title span{
+	vertical-align: super;
+	font-size: 0.35em;
+}
+
+.email img,
+.password img{
+	width: 16%;
 	height: 2.225em;
-
-	vertical-align: bottom;
-
-	/*padding-right: 1em;*/
-
-	padding-right: 0.7em;
+	vertical-align: middle;
+	padding-right: 2%;
 }
 
-.loginBtn{
-	text-align: center;
+.email input,
+.password input{	
+	width: 75%;
+	height: 1.75em;
+	margin-top: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", Georgia, serif;
+	text-align: left;
+}
+
+.input-invalid{
+	/* 输入错误时，输入框边框的样式 */
+	border-color: red;
+	color: red;
 }
 
 .loginBtn button{
-	/*width: 28.5em;
-	height: 2.5em;*/
-
-	width: 20.2em;
-	height: 1.75em;
-
+	width: 95%;
+	height: 2em;
 	border: 0;
 	font-family: "Microsoft YaHei";
 	background-color: rgb(30, 120, 207);
 	color: white;
 }
 
-#btn-close{
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 3000;
-
-	/*line-height: 1.2em;*/
-	line-height: 0.84em;
-
-	background-color: rgb(51, 51, 51);
-	border: 0;
-
-	/*padding: 0.4em;*/
-	padding: 0.28em;
+.tip a{
+	display: inline-block;
+	width: 47.5%;
 }
 
-#btn-close:hover{
-	background: rgb(90, 90, 100);
-}
-
-#btn-close img{
-	/*width: 1.2em;
-	height: 1.2em;*/
-	
-	width: 0.84em;
-	height: 0.84em;
-
-	padding: 0;
+.tip a:first-child{
+	text-align: left;
 }
 
 .tip a:last-child{
-	position: relative;
-	/*left: 14em;*/
-
-	left: 7.8em;
-}
-
-.title{
-	text-align: center;
-}
-
-.title span{
-	vertical-align: super;
-
-	/*font-size: 0.5em;*/
-
-	font-size: 0.35em;
-}
-
-.invalid{
-	border-color: red;
-	color: red;
+	text-align: right;
 }
 
 
@@ -441,7 +411,6 @@ ul[class="user-submenu"]{
 	}
 
 	.g-nav ul{
-		/*margin: 1em 0;*/
 		padding: 0;
 	}
 
@@ -452,9 +421,6 @@ ul[class="user-submenu"]{
 	.g-nav li,
 	.g-nav a{
 		width: 9.1em;
-
-		/*width: 32%;*/
-
 	}
 
 	.g-nav a{
@@ -463,11 +429,7 @@ ul[class="user-submenu"]{
 
 	.g-nav li:last-child{
 		width: 18.5em;
-		
-		/*width: 100%;*/
-
 		margin-top: 1em;
-
 		position: relative;
 	}
 
@@ -486,11 +448,7 @@ ul[class="user-submenu"]{
 		border-bottom: 0.1em solid rgb(238, 238, 238);
 	}
 
-	/* 登录界面 */
-	#login-bar-parent{
-		height: 19.5em;
-	}
-
+	/* 登录框 */
 	.m-login,
 	.tab,
 	.loginBtn button,
@@ -498,15 +456,13 @@ ul[class="user-submenu"]{
 		border-radius: 0.5em;
 	}
 
-
 	.m-login{
 		width: 25em;
-		height: 19.5em;
+		height: 18.8em;
 	}
 
 	.item{
 		margin-top: 1em;
-		padding-left: 0.5em;
 	}
 
 	.tab{
@@ -514,38 +470,28 @@ ul[class="user-submenu"]{
 		line-height: 3em;
 	}
 
-	.m-login input{
-		width: 22.5em;
-		height: 2.5em;
-	}
-
-	.m-login img{
-		width: 3.75em;
-		height: 2.75em;
-
-		padding-right: 1em;
-	}
-
-	.loginBtn button{
-		width: 27.5em;
-		height: 2.5em;
-	}
-
-	#btn-close{
+	.tab button{
 		line-height: 1.2em;
 		padding: 0.4em;
 	}
 
-	#btn-close img{
+	.tab button img{
 		width: 1.2em;
 		height: 1.2em;
 	}
 
-	.tip a:last-child{
-		left: 14em;
-	}
-
 	.title span{
 		font-size: 0.5em;
+	}
+
+	.email img,
+	.password img{
+		height: 3em;
+	}
+
+	.email input,
+	.password input,
+	.loginBtn button{
+		height: 2.5em;
 	}
 }
